@@ -1,0 +1,25 @@
+user-side:
+1- login using username
+2- pick hand symbol 
+3- press play button
+4- end(logout).
+ui stages:
+0-top display: rock paper scissors game. player -left, computer,right.- use filler.
+1-login form 
+  display:  enter name input and log in button.
+2-play screen
+  if(cookie username already set with recent score)
+  display:playername,previous score, current score, computer score.
+  else display: playername, current score, computer score.
+-play button / end button.
+3- play?
+ top display: player choice gif, computer choice gif.
+ display: player score, computer score.
+4- end?
+  cut displays=> display;thank you very much for playing $playername, total score, play again link.
+back end:
+accept log in username & check if it is existing- if existing:display previous score.
+accept choice and generate random pc choice then match if win or not-if win: add to player score ! :add to pc score.
+create cookie for total score if end- display total score and display link for log in button.
+gameplay logic:
+generate random choice and return pcchoice- return results by checking if it matches the winning combinations for player or computer.
